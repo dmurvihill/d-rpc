@@ -1,0 +1,48 @@
+{
+  "name": "d-rpc",
+  "version": "0.8.0",
+  "description": "Transparent json-rpc implementation",
+  "keywords": [
+    "rpc",
+    "json-rpc",
+    "remote"
+  ],
+  "homepage": "https://github.com/dmurvihill/d-rpc",
+  "bugs": "https://github.com/dmurvihill/d-rpc/issues",
+  "license": "Unlicense",
+  "author": "Dolan Murvihill <dmurvihill@gmail.com>",
+  "files": ["lib/"],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dmurvihill/d-rpc.git"
+  },
+  "scripts": {
+    "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
+    "lint": "eslint --config ./src/test/.eslintrc.json ./src/**/*.ts",
+    "docs": "typedoc --mode file --out docs/ src/",
+    "clean": "rm -rf lib/",
+    "prepare": "./prepare.sh"
+  },
+  "dependencies": {
+    "fast-check": "^1.21.0",
+    "json-typescript": "^1.1.2",
+    "rxjs": "^6.5.4"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.5.0",
+    "@types/node": "^13.1.2",
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.14.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "jasmine": "^3.5.0",
+    "jasmine-core": "^3.5.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "ts-node": "^8.5.4",
+    "tslint": "^5.20.1",
+    "typedoc": "^0.15.6",
+    "typescript": "^3.5.3"
+  },
+  "private": false
+}

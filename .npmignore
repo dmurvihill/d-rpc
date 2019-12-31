@@ -1,0 +1,2 @@
+# Empty .npmignore because without it NPM defaults to following
+# .gitignore
